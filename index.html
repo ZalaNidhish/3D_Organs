@@ -7,13 +7,16 @@
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
+        <div class="pageloader">
+            <div class="loader"></div>
+        </div>
         <div class="main">
             <div class="tiles">
                 <a href="./organs/heart/heart.html">
                     <div class="img"><img src="./assets/heart.png" alt=""></div>
                     <div class="name">HEART</div>
                 </a>
-                <a href="./organs/brain.html">
+                <a href="./organs/brain/brain.html">
                     <div class="img"><img src="./assets/brain.png" alt=""></div>
                     <div class="name">BRAIN</div>
                 </a>
@@ -50,10 +53,7 @@
         </div>
 
 
-
-        <script
-            type="module"
-            src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-        ></script>
+        <script type="module" src="./model-viewer.min.js"></script>
+        <script src="./script.js"></script>
     </body>
 </html>

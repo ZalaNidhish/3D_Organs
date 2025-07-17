@@ -4,9 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HEART</title>
-    <link rel="stylesheet" href="heart.css" />
+    <link rel="stylesheet" href="../organs.css"/>
   </head>
   <body>
+     <div class="pageloader">
+            <div class="loader"></div>
+        </div>
     <div class="main">
       <div class="structure">
         <h1>Structure Of Heart</h1>
@@ -14,18 +17,19 @@
           <img
             src="../heart/heart_assets/circulation-blood-heart-cross-sectional-diagram-heart-main-parts-labeled-vector-illustration-183471526.webp"
           />
-          <model-viewer
-            src="../heart/heart_assets/human_heart_realistic_anatomical_model.glb"
-            alt="3D animated human heart"
-            auto-rotate
-            autoplay
-            camera-controls
-            shadow-intensity="1"
-            camera-orbit="0deg 90deg 2m"
-            exposure="1.2"
-          >
-          </model-viewer>
-          
+          <div class="img">
+            <model-viewer
+              src="../heart/heart_assets/human_heart_realistic_anatomical_model.glb"
+              alt="3D animated human heart"
+              auto-rotate
+              autoplay
+              camera-controls
+              shadow-intensity="1"
+              camera-orbit="0deg 90deg 10m"
+              exposure="1.2"
+            >
+            </model-viewer>
+          </div>
         </div>
         <div class="theory">
           <p>
@@ -142,9 +146,6 @@
             exposure="1.2"
           >
           </model-viewer>
-          
-          
-          
         </div>
         <div class="theory">
           <p>
@@ -230,24 +231,24 @@
             during stress or emergency situations, allowing the body to respond
             more effectively.
           </p>
-          <model-viewer
-            src="../heart/heart_assets/heart.glb"
-            alt="3D animated human heart"
-            auto-rotate
-            autoplay
-            camera-controls
-            shadow-intensity="1"
-            camera-orbit="0deg 90deg 2m"
-            exposure="1.2"
-          >
-          </model-viewer>
+          <div class="img">
+            <model-viewer
+              src="../heart/heart_assets/heart.glb"
+              alt="3D animated human heart"
+              auto-rotate
+              autoplay
+              camera-controls
+              shadow-intensity="1"
+              camera-orbit="0deg 90deg 5m"
+              exposure="1.2"
+            >
+            </model-viewer>
+          </div>
         </div>
       </div>
     </div>
 
-    <script
-      type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
-    ></script>
+    <script type="module" src="../../model-viewer.min.js"></script>
+    <script src="../../script.js"></script>
   </body>
 </html>
